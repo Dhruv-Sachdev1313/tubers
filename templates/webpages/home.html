@@ -53,7 +53,9 @@
         {% for fy in featured_youtubers %}
         <div class="card border-0 text-center ml-3 mr-3">
           <div class="feature-text">
+            <a href="{% url 'youtubers_detail' fy.id %}">
             <img src="{{fy.photo.url}}" class="card-img-top" alt="team-member">
+            </a>
             <span class="text-left bg-accent font-weight-bold">
               Featured
             </span>
